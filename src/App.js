@@ -1,25 +1,20 @@
-import logo from './logo.svg';
+import logo from './assets/logo.png'
 import './App.css';
+import Banner from "./composants/Banner";
+import React from "react";
+import ShoppingList from "./composants/ShoppingList";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <React.Fragment>
+            {/*<Banner/>*/}
+            <Banner>
+                <img src={logo} alt="la maison jungle" className='lmj-logo'/>
+                <h1 className='lmj-title'> La maison jungle </h1>
+            </Banner>
+            <ShoppingList/>
+        </React.Fragment>
+    );
 }
 
 export default App;
