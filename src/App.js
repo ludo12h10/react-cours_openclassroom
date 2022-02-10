@@ -3,6 +3,7 @@ import './App.css';
 import Banner from "./composants/Banner";
 import React from "react";
 import ShoppingList from "./composants/ShoppingList";
+import QuestionForm from "./composants/QuestionForm";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                 <h1 className='lmj-title'> La maison jungle </h1>
             </Banner>
             <ShoppingList/>
+            <QuestionForm/>
         </React.Fragment>
     );
 }
